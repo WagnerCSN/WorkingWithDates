@@ -17,7 +17,10 @@ public class Program {
 		System.out.println("Date end time in London or time global: "+d03);
 		
 		LocalDate d04 = LocalDate.parse("2024-04-26");
-		System.out.println("add date in the format ISO: " + d04);
+		System.out.println("Add date in the format ISO: " + d04);
+		
+		LocalDateTime d05 = LocalDateTime.parse("2024-04-25T16:05:07.2525");
+		System.out.println("Add date end time in the format ISO: "+d05);
 
 	}
 
