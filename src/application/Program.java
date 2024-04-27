@@ -1,5 +1,6 @@
 package application;
 
+import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -12,6 +13,8 @@ public class Program {
 		LocalDateTime d02 = LocalDateTime.now();
 		System.out.println("Date end time local: " + d02);
 
+		Instant d03 = Instant.now();
+		System.out.println("Date end time in London or time global: "+d03);
 	}
 
 }
