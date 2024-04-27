@@ -21,6 +21,9 @@ public class Program {
 		
 		LocalDateTime d05 = LocalDateTime.parse("2024-04-25T16:05:07.2525");
 		System.out.println("Add date end time in the format ISO: "+d05);
+		
+		Instant d06 = Instant.parse("2024-05-25T15:26:25.242526Z");
+		System.out.println("Add date end time global in the ISO:"+ d06);
 
 	}
 
