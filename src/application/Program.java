@@ -18,6 +18,7 @@ public class Program {
 		
 		LocalDate d04 = LocalDate.parse("2024-04-26");
 		System.out.println("add date in the format ISO: " + d04);
+
 	}
 
 }
