@@ -30,6 +30,9 @@ public class Program {
 		
 		LocalDate d07 = LocalDate.parse("20/07/2024", fmt1);
 		System.out.println("Adding dates formatting: "+d07);
+		
+		LocalDate d08 = LocalDate.of(2024, 04, 28);
+		System.out.println("Instantiate date with isolated data: "+d08);
 	}
 
 }
