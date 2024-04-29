@@ -3,10 +3,13 @@ package application;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Program {
 
 	public static void main(String[] args) {
+		DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		
 		LocalDate d01 = LocalDate.now();
 		System.out.println("Date local: "+ d01);
 		
@@ -24,7 +27,9 @@ public class Program {
 		
 		Instant d06 = Instant.parse("2024-05-25T15:26:25.242526Z");
 		System.out.println("Add date end time global in the ISO:"+ d06);
-
+		
+		LocalDate d07 = LocalDate.parse("20/07/2024", fmt1);
+		System.out.println("Adding dates formatting: "+d07);
 	}
 
 }
