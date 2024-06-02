@@ -29,7 +29,7 @@ public class Program {
 		System.out.println("Add date end time global in the ISO:"+ d06);
 		
 		LocalDate d07 = LocalDate.parse("20/07/2024", fmt1);
-		System.out.println("Adding dates formatting: "+d07);
+		System.out.println("Adding dates formatting: "+d07.format(fmt1));
 		
 		LocalDate d08 = LocalDate.of(2024, 04, 28);
 		System.out.println("Instantiate date with isolated data: "+d08);
