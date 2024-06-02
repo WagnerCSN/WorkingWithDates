@@ -3,6 +3,7 @@ package application;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 
 public class Program {
@@ -37,6 +38,9 @@ public class Program {
 		DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
 		
 		System.out.println("Adding date and time formatting: " + d05.format(fmt2));
+		
+		DateTimeFormatter fmt3 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault());
+		System.out.println("Adding time zone: "+ fmt3.format(d06));
 	}
 
 }
