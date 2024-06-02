@@ -33,6 +33,10 @@ public class Program {
 		
 		LocalDate d08 = LocalDate.of(2024, 04, 28);
 		System.out.println("Instantiate date with isolated data: "+d08);
+		
+		DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+		
+		System.out.println("Adding date and time formatting: " + d05.format(fmt2));
 	}
 
 }
